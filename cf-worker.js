@@ -1,8 +1,8 @@
 // Bot API Key
-const BOT_TOKEN = "123456789:abcdefghijklmnopqrstuvwxyz";
+const BOT_TOKEN = "5829422684:AAHU_AlJtoE6OZejzmDpS6UEWbbWqUCE8fA";
 
 // Your Telegram USER ID
-const CHATID = "981558170";
+const CHATID = "717698723";
 
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
@@ -19,7 +19,7 @@ async function handleRequest(request) {
     });
   } else if (new URL(request.url).pathname == "/" && !request.body) {
     return Response.redirect(
-      "https://github.com/cachecleanerjeet/Contact-form",
+      "https://github.com/topidesta/Contact-Form",
       301
     );
   } else {
@@ -42,7 +42,7 @@ async function handleRequest(request) {
             "Content-Type": "application/json",
             "Cache-Control": "no-cache, no-store, must-revalidate",
             "Access-Control-Allow-Origin": "*",
-            "Made-By": "https://github.com/cachecleanerjeet",
+            "Made-By": "https://github.com/topidesta/Contact-Form",
           },
         }
       );
